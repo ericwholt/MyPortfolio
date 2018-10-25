@@ -107,6 +107,12 @@ main {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
+    h3 {
+      font-size: 2rem;
+    }
+    h6 {
+      font-size: 1rem;
+    }
   }
 }
 
@@ -169,13 +175,13 @@ main {
 
 .btn-dark {
   @extend .btn;
-  background: darken($primary-color, 50);
+  background: #3a506b; //darken($primary-color, 15);
   color: #fff;
 }
 
 .btn-light {
   @extend .btn;
-  background: lighten($primary-color, 50);
+  background: #b7bfc9; //lighten($primary-color, 75);
   color: #333;
 }
 
