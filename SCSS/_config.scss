@@ -40,23 +40,43 @@ $background-opacity: 0.9;
 
 // Media Query Mixins
 @mixin mediaSm {
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 530px) {
     @content;
   }
 }
 
 @mixin mediaMd {
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 531px) and (max-width: 865px) {
     @content;
   }
 }
+
 @mixin mediaLg {
-  @media screen and (min-width: 769px) and (max-width: 1170px) {
+  @media screen and (min-width: 866px) and (max-width: 1370px) {
     @content;
   }
 }
+
 @mixin mediaXl {
-  @media screen and (min-width: 1171px) {
+  @media screen and (min-width: 1371px) and (max-width: 1600px) {
+    @content;
+  }
+}
+
+@mixin mediaXXl {
+  @media screen and (min-width: 1601px) and (max-width: 2100px) {
+    @content;
+  }
+}
+
+@mixin mediaXXXl {
+  @media screen and (min-width: 2101px) and (max-width: 2500px) {
+    @content;
+  }
+}
+
+@mixin mediaXXXXl {
+  @media screen and (min-width: 2501px) {
     @content;
   }
 }
