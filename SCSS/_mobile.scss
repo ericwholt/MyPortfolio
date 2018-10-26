@@ -1,11 +1,26 @@
 // Widescreens
 @include mediaXXXXl {
+  .menu-branding {
+    .portrait {
+      background: url("../img/portrait.png");
+      width: 325px;
+      height: 325px;
+    }
+  }
+
   .projects {
     grid-template-columns: repeat(7, 1fr);
     //width: 1300px;
   }
 }
 @include mediaXXXl {
+  .menu-branding {
+    .portrait {
+      background: url("../img/portrait.png");
+      width: 325px;
+      height: 325px;
+    }
+  }
   .projects {
     grid-template-columns: repeat(6, 1fr);
     //width: 1300px;
@@ -13,6 +28,13 @@
 }
 
 @include mediaXXl {
+  .menu-branding {
+    .portrait {
+      background: url("../img/portrait.png");
+      width: 325px;
+      height: 325px;
+    }
+  }
   .projects {
     grid-template-columns: repeat(5, 1fr);
     //width: 1300px;
@@ -20,6 +42,14 @@
 }
 
 @include mediaXl {
+  .menu-branding {
+    .portrait {
+      background: url("../img/portrait.png");
+      width: 325px;
+      height: 325px;
+    }
+  }
+
   .projects {
     grid-template-columns: repeat(4, 1fr);
     //width: 1300px;
@@ -28,6 +58,13 @@
 
 // Desktops & Laptops
 @include mediaLg {
+  .menu-branding {
+    .portrait {
+      background: url("../img/portrait.png");
+      width: 325px;
+      height: 325px;
+    }
+  }
   .projects {
     grid-template-columns: repeat(3, 1fr);
     //width: 1000px;
@@ -69,8 +106,8 @@
 
     .portrait {
       background: url("../img/portrait_small.png");
-      width: 200px;
-      height: 200px;
+      width: 125px;
+      height: 125px;
     }
   }
 
@@ -100,7 +137,11 @@
     }
     .lg-heading {
       margin-top: 1rem;
-      font-size: 5rem;
+      font-size: 3rem;
+    }
+
+    &#about {
+      padding: 1rem;
     }
   }
 
@@ -160,8 +201,8 @@
 
     .portrait {
       background: url("../img/portrait_small.png");
-      width: 150px;
-      height: 150px;
+      width: 125px;
+      height: 125px;
     }
   }
 }
